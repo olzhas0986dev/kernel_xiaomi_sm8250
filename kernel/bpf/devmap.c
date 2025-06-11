@@ -520,7 +520,7 @@ static void __dev_map_entry_free(struct rcu_head *rcu)
 	struct bpf_dtab_netdev *dev;
 
 	dev = container_of(rcu, struct bpf_dtab_netdev, rcu);
-	dev_map_flush_old(dev);
+	
 	free_percpu(dev->bulkq);
 	dev_put(dev->dev);
 	kfree(dev);
