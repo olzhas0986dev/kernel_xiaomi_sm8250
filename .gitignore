@@ -141,3 +141,6 @@ kernel/configs/android-*.cfg
 #techpack/
 out/
 build.sh
+clang/
+p.sh
+gcc*/
