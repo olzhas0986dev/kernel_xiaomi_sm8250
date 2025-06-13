@@ -144,3 +144,4 @@ build.sh
 clang/
 p.sh
 gcc*/
+/images/
