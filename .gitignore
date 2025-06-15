@@ -145,3 +145,5 @@ clang/
 p.sh
 gcc*/
 /images/
+/Anykernel/
+build.log
