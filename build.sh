@@ -37,13 +37,15 @@ cp dtbo.img ../../../../../Anykernel
 mv dtb.img dtb
 cp dtb ../../../../../Anykernel
 cd ../../../../../Anykernel
-7z a -mx9 N0Kernel-Next-POCOF4.zip
+7z a -mx9 Pureline-POCOF4.zip
 rm -rf Image.gz
 rm -rf dtbo.img
 rm -rf dtb
 
 # Sending build to TG
 curl -s -X POST "https://api.telegram.org/bot$TGTOKEN/sendDocument?chat_id=@Ximipurekernel1" \
-    -F document=@"./N0Kernel-Next-POCOF4.zip" \
-    -F caption="N0Kernel-Next testing build. Build number ${BUILD}" \
+    -F document=@"./Pureline-POCOF4.zip" \
+    -F caption="testing build. Build number ${BUILD}" \
     -F message_thread_id="3"
+    
+rm -rf Pureline-POCOF4.zip
