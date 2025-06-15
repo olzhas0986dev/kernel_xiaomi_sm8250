@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.19.246 Kernel Configuration
+# Linux/arm64 4.19.332 Kernel Configuration
 #
 
 #
@@ -20,7 +20,7 @@ CONFIG_THREAD_INFO_IN_TASK=y
 #
 CONFIG_INIT_ENV_ARG_LIMIT=32
 # CONFIG_COMPILE_TEST is not set
-CONFIG_LOCALVERSION="-N0kernel-Next"
+CONFIG_LOCALVERSION="-Pureline"
 CONFIG_LOCALVERSION_AUTO=y
 CONFIG_BUILD_SALT=""
 CONFIG_INLINE_OPTIMIZATION=y
