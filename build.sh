@@ -29,13 +29,14 @@ elapsed_time=$((end_time - start_time))
 echo "Общее время выполнения: $elapsed_time секунд"
 
 # Compressing kernel ZIP
+cd ..
 git clone https://github.com/olzhas0986dev/Anykernel.git -b main
-cd out/arch/arm64/boot
-cp Image.gz ../../../../Anykernel
-cp dtbo.img ../../../../Anykernel
+cd kernel_xiaomi_sm8250/out/arch/arm64/boot
+cp Image.gz ../../../../../Anykernel
+cp dtbo.img ../../../../../Anykernel
 mv dtb.img dtb
-cp dtb ../../../../Anykernel
-cd ../../../../Anykernel
+cp dtb ../../../../../Anykernel
+cd ../../../../../Anykernel
 7z a -mx9 N0Kernel-Next-POCOF4.zip
 rm -rf Image.gz
 rm -rf dtbo.img
