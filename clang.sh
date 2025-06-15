@@ -1,4 +1,7 @@
 # AOSP Clang & gcc linaro installer script
+sudo apt update
+sudo apt -y upgrade
+sudo apt install -y flex
 mkdir clang
 cd clang
 wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r547379.tar.gz
