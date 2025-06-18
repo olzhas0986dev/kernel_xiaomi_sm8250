@@ -45,7 +45,7 @@ rm -rf dtb
 # Sending build to TG
 curl -s -X POST "https://api.telegram.org/bot$TGTOKEN/sendDocument?chat_id=@Ximipurekernel1" \
     -F document=@"./Pureline-POCOF4.zip" \
-    -F caption="testing build. Build number ${BUILD}" \
+    -F caption="Pureline kernel testing, build with AOSP clang. Build time: $elapsed_time seconds." \
     -F message_thread_id="3"
     
 rm -rf Pureline-POCOF4.zip
